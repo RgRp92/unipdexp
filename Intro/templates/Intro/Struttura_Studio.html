@@ -1,0 +1,28 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Struttura dello studio
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top" style="font-size: 22px">
+<p></p>
+    Lo studio si compone di <span style="color:green"> 7 </span> sezioni:
+    <p></p>
+    <ul>
+        <li><b>Sezione 1</b>: ti chiederemo la tua intezione a stipulare un contratto di produzione</li>
+        <p></p>
+        <li><b>Sezione 2</b>: ti chiederemo le tue previsioni riguardo al prezzo del frumento duro
+        <span style="color:green"> alla raccolta, alla prima quotazione di luglio 2022 </span></li>
+        <p></p>
+        <li><b>Sezione 3</b>: ti chiederemo di compiere delle scelte riguardo alla stipula di un contatto
+        di produzione</li>
+    </ul>
+</div>
+<p></p>
+
+    {% next_button %}
+{% endblock %}
+
+

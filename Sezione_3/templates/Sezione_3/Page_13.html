@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Esempio 1
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+<div class="w3-container  " style="font-size: 22px">
+    Se in corrispondenza della riga 16 della tabella hai scelto l’opzione A, vincerai: 27,40 €
+<img src="{%static '/Sezione_3/contratti4.jpg' %}"  align="middle" width="100%"/>
+
+</div>
+    <p></p>
+    {% next_button %}
+
+{% endblock %}

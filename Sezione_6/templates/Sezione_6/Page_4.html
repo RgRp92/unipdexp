@@ -1,0 +1,195 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block styles %}
+   <style>
+input[type=radio] {
+  border: 1px solid black;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
+  background-size: 9px 9px;
+  border: 1px solid black;
+  background: #222021;
+
+}
+
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+   </style>
+{% endblock %}
+{% block title %}
+ <h4>Prego scelga tra Opzione A e Opzione B nelle seguenti Situazioni. Dopo aver scelto clicchi il tasto INVIA (in basso).</h4>
+{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static "global/empty.css" %}">
+
+<table class="table table-hover table-bordered" border="black" style="width : 100%" align="middle">
+    <tr align="middle" style="font-weight: bold">
+        <td></td>
+        <td align="middle" >OPZIONE A</td>
+                <td></td>
+        <td colspan="6" >OPZIONE B</td>
+    </tr>
+    <tr align="middle" style="font-weight: bold">
+        <td></td>
+        <td>Contratto con prezzo fisso</td>
+        <td></td>
+        <td colspan="6">Contratto SENZA prezzo fisso</td>
+    </tr>
+    <tr align="middle" >
+        <td width="">1</td>
+        <td>22.00</td>
+        <td width="12%">{{form.rHL_1}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>2</td>
+        <td>23.00</td>
+        <td >{{form.rHL_2}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>3</td>
+        <td>24.00</td>
+        <td >{{form.rHL_3}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>4</td>
+        <td>25.00</td>
+        <td >{{form.rHL_4}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>5</td>
+        <td>26.00</td>
+        <td >{{form.rHL_5}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>6</td>
+        <td>27.00</td>
+        <td >{{form.rHL_6}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>7</td>
+        <td>28.00</td>
+        <td >{{form.rHL_7}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>8</td>
+        <td>29.00</td>
+        <td >{{form.rHL_8}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>9</td>
+        <td>30.00</td>
+        <td >{{form.rHL_9}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>10</td>
+        <td>31.00</td>
+        <td >{{form.rHL_10}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>11</td>
+        <td>32.00</td>
+        <td >{{form.rHL_11}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+    <tr align="middle" >
+        <td>12</td>
+        <td>33.00</td>
+        <td >{{form.rHL_12}}</td>
+        <td>23.00 - 24.99</td>
+        <td>25.00 - 26.99</td>
+        <td>27.00 - 28.99</td>
+        <td>29.00 - 30.99</td>
+        <td>31.00 - 32.99</td>
+        <td>33.00 - 34.99</td>
+    </tr>
+</table>
+
+<p></p>
+<div class="container">
+        	<div class="row">
+        	</div>
+        	<div class="row" style="padding-left:100%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">INVIA</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+{% endblock %}

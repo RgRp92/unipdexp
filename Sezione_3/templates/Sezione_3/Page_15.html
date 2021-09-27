@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Esempio 2
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+<div class="w3-container  " style="font-size: 22px">
+    <p></p>
+    • Prezzo CBOT = 27,34
+    <p></p>
+    • Il valore medio dell’intervallo in cui ricade il prezzo CBOT= 28€
+
+<img src="{%static '/Sezione_3/contratti6.jpg' %}"  align="middle" width="100%"/>
+
+</div>
+    <p></p>
+    {% next_button %}
+
+{% endblock %}

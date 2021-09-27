@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+<div class="w3-container border-top " style="font-size: 22px">
+<p></p>
+Sarai sottoposto a <span style="color: green"> 30</span> situazioni di scelta simili a quella appena proposta. Per ora ti mostriamo solamente le prime 12
+<p></p>
+    <img src="{%static '/Sezione_3/contratti.jpg' %}"  align="middle" width="100%"/>
+    {% next_button %}
+</div>
+{% endblock %}
