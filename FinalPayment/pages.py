@@ -91,7 +91,7 @@ class Sezione_5(Page):
 
 class Sezione_6(Page):
     def vars_for_template(self):
-        payoff_HLc = round((self.player.participant.vars['payoff_HL']/1000) * (1.06),2)
+        payoff_HLc = round((self.player.participant.vars['rpayoff_HL']/1000) * (1.06),2)
         # retrieve values from participant.vars and store them in a dictionary
 
         if  self.session.vars['rHL_scenario'] <= 30 :
