@@ -129,7 +129,7 @@ class Sezione_6(Page):
         return self.session.vars["app"] == 6
 
     def before_next_page(self):
-        self.player.payoff = self.player.participant.vars['payoff_rHL']
+        self.player.payoff = self.player.participant.vars['rpayoff_HL']
 
 
 class Goodbye_Winner(Page):
