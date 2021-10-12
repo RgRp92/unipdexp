@@ -1,0 +1,143 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block styles %}
+   <style>
+   ul {list-style:none}
+
+input[type=radio] {
+  border: 1px solid black;
+  padding: .5em;
+  -webkit-appearance: none;
+   position: relative;
+   margin: 15px;
+   outline: none;
+
+
+}
+
+input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
+  background-size: 9px 9px;
+  border: 1px solid black;
+  background: #222021;
+}
+
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+   </style>
+{% endblock %}
+{% block title %}
+ <h4>Queste sono le tue scelte </h4>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty1.css" %}">
+
+<table class="table table-hover " style="width : 100%" align="middle">
+    <tr style="font-weight: bold">
+        <td></td>
+                <td style="border-right: 1px solid"></td>
+        <td align="middle" style="border-right: 1px dashed" >OPZIONE A</td>
+        <td colspan="8" style="border-right: 1px dashed" >OPZIONE B</td>
+    </tr>
+    <tr style="font-weight: bold">
+        <td></td>
+        <td style="border-right: 1px solid"></td>
+        <td width="15%" style="border-right: 1px dashed" >Contratto CON prezzo fisso</td>
+        <td colspan="8" style="border-right: 1px dashed" >Contratto SENZA prezzo fisso</td>
+    </tr>
+    <tr>
+        <td width="">11</td>
+        <td width="7%" rowspan="1" style="border-right: 1px solid">
+        {% if rHL_2 > 11 %} <b> OPZIONE B</b>  {% else %} <b>OPZIONE A</b> {% endif %}
+        </td>
+        <td rowspan="1" style="border-right: 1px dashed">{{rHL11}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr>
+        <td width="">12</td>
+        <td width="7%" rowspan="1" style="border-right: 1px solid">
+        {% if rHL_2 > 12 %} <b> OPZIONE B</b>  {% else %} <b>OPZIONE A</b> {% endif %}
+        </td>
+        <td rowspan="1" style="border-right: 1px dashed">{{rHL12}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr>
+        <td width="">13</td>
+        <td width="7%" rowspan="1" style="border-right: 1px solid">
+        {% if rHL_2 > 13 %} <b> OPZIONE B</b>  {% else %} <b>OPZIONE A</b> {% endif %}
+        </td>
+        <td rowspan="1" style="border-right: 1px dashed">{{rHL13}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr>
+        <td width="">14</td>
+        <td width="7%" rowspan="1" style="border-right: 1px solid">
+        {% if rHL_2 > 14 %} <b> OPZIONE B</b>  {% else %} <b>OPZIONE A</b> {% endif %}
+        </td>
+        <td rowspan="1" style="border-right: 1px dashed">{{rHL14}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr>
+        <td width="">15</td>
+        <td width="7%" rowspan="1" style="border-right: 1px solid">
+        {% if rHL_2 > 15 %} <b> OPZIONE B</b>  {% else %} <b>OPZIONE A</b> {% endif %}
+        </td>
+        <td rowspan="1" style="border-right: 1px dashed">{{rHL15}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+</table>
+
+<p></p>
+<div class="container">
+        	<div class="row">
+        	</div>
+        	<div class="row" style="padding-left:100%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+{% endblock %}

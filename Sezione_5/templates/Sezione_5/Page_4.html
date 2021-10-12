@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h5> Prego assegni i gettoni. Dopo aver assegnato tutti i gettoni potrete cliccare sul tasto INVIA (in basso) per proseguire.</h5>
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top ">
+</div>
+<img src="{%static '/Sezione_4/UniExpert.jpg' %}" />
+<img src="{%static '/Sezione_4/ProdExpert.jpg' %}" />
+<img src="{%static '/Sezione_4/BuyerExp.jpg' %}" />
+<link rel="stylesheet" href="{% static "global/farmerchoice.css" %}">
+<script type="text/javascript" src="{% static "global/farmerchoice2.js" %}"></script>
+
+
+<div id = "full_div" >
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+// Some initial globals
+
+let belief_dat_new = {{nbeliefs|json}};
+beliefs_ns.mkview(belief_dat_new, "full_div", results = 0, show_submit = 1);
+
+</script>
+
+{% endblock %}

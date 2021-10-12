@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  <h1>  Fine </h1>
+{% endblock %}
+
+{% block content %}
+
+<div class="w3-container border-top border-bottom">
+    <p></p>
+<h3 style="text-align:center"> <b> Congratulazioni Lei è il giocatore <span style="color:blue;"># {{id}}</span> ed è stato estratto per ricevere il pagamento addizionale </b> </h3>
+<p></p>
+<h3 style="text-align:center"> <b> Il suo pagamento addizionale corrisponde a {{player.payoff}}  </span> </b> </h3>
+    <p></p>
+<h1 style="text-align:center"> Grazie per la partecipazione </h1>
+	<p></p>
+</div>
+
+{% endblock %}
+

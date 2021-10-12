@@ -1,0 +1,207 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block styles %}
+   <style>
+   ul {list-style:none}
+
+input[type=radio] {
+  border: 1px solid black;
+  padding: .5em;
+  -webkit-appearance: none;
+   position: relative;
+   margin: 1px;
+   outline: none;
+
+
+}
+
+input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
+  background-size: 9px 9px;
+  border: 1px solid black;
+  background: #222021;
+}
+
+input[type=radio]:focus {
+  outline-color: transparent;
+}
+   </style>
+{% endblock %}
+{% block title %}
+ <h4>Prego scegli la riga in corrispondenza della quale cambiare da Opzione B ad Opzione A.</h4>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty1.css" %}">
+
+<table class="table table-hover " style="width : 100%; " text-align="middle">
+    <tr style="font-weight: bold; ">
+        <td></td>
+        <td style="border-right: 1px solid"></td>
+        <td align="middle" style="border-right: 1px dashed" >OPZIONE A</td>
+        <td colspan="8" style="border-right: 1px dashed" >OPZIONE B</td>
+    </tr>
+    <tr style="font-weight: bold">
+        <td></td>
+        <td style="border-right: 1px solid"></td>
+        <td width="15%" style="border-right: 1px dashed" >Contratto CON prezzo fisso</td>
+        <td colspan="8" style="border-right: 1px dashed" >Contratto SENZA prezzo fisso</td>
+    </tr>
+    <tr>
+        <td width="">17</td>
+        <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="17" name="HL_3"></td>
+
+        <td rowspan="1" style="border-right: 1px dashed">{{HL17}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>18</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="18" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL18}}</td>        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>19</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="19" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL19}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>20</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="20" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL20}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>21</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="21" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL21}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed" >50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>22</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="22" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL22}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>23</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="23" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL23}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>24</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="24" name="HL_3">
+
+        <td style="border-right: 1px dashed" >{{HL24}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>25</td>
+                <td width="5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="25" name="HL_3">
+
+        <td style="border-right: 1px dashed">{{HL25}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%" style="border-right: 1px dashed">50.00 - 53.99</td>
+    </tr>
+    <tr >
+        <td>MAI</td>
+        <td width="5%" rowspan="1" style="border-right: 1px  solid">  <input class="radio" type="radio" value="26" name="HL_3">
+
+        <td style="border-right: 1px dashed"></td>
+        <td width="10%"></td>
+        <td width="10%"></td>
+        <td width="10%"></td>
+        <td width="10%"></td>
+        <td width="10%"></td>
+        <td width="10%"></td>
+        <td width="10%"></td>
+        <td width="10%" style="border-right: 1px dashed"></td>
+    </tr>
+</table>
+
+<p></p>
+<div class="container">
+        	<div class="row">
+        	</div>
+        	<div class="row" style="padding-left:100%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">INVIA</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+{% endblock %}
