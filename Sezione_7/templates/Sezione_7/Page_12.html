@@ -1,0 +1,82 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Quanto sei d'accordo con le seguenti affermazioni?
+{% endblock %}
+
+{% block content %}
+<div class="w3-container " style="font-size: 22px">
+    <p></p>
+<p></p>
+    Per rispondere, usa una scala da 1 (per nulla) a 7 (moltissimo)
+    <p></p>
+<table class="table" style="font-size: 75%" >
+    <tr align="center">
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr align="right">
+        <td align="left">Quando incontro una difficoltà nella mia azienda, di solito riesco a pensare ad una soluzione</td>
+			{% for choice in form.likert19 %}
+          	<td style="padding-left:3.5%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+    <tr align="right">
+        <td align="left">Sono fiducioso di poter raggiungere i miei obiettivi di reddito alla fine della campagna agraria</td>
+        {% for choice in form.likert20 %}
+          	<td style="padding-left:3.5%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+    <tr align="right">
+        <td align="left">Posso risolvere la maggior parte dei problemi legati alla mia azienda se impiego lo sforzo necessario</td>
+        {% for choice in form.likert21 %}
+          	<td style="padding-left:3.5%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+    <tr align="right">
+        <td align="left">Il successo della mia azienda dipende principalmente dalle mie capacità di agricoltore</td>
+        {% for choice in form.likert22 %}
+          	<td style="padding-left:3.5%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+    <tr align="right">
+        <td align="left">Il mio reddito dipende più dal mercato che da quello che faccio io</td>
+        {% for choice in form.likert23 %}
+          	<td style="padding-left:3.5%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+    <tr align="right">
+        <td align="left">Il successo dell'azienda (es. buoni profitti) può essere influenzato solo leggermente dall'agricoltore</td>
+        {% for choice in form.likert24 %}
+          	<td style="padding-left:3.5%">{{ choice }}</td>
+          {% endfor %}
+		</tr>
+
+  </table>
+    <p></p>
+
+</div>
+    <p></p>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>{% endblock %}

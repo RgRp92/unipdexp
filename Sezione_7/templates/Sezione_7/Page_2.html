@@ -1,0 +1,38 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3>QUESTIONARIO FINALE </h3>
+
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top" style="font-size: 22px">
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+<p>Ti chiederemo di rispondere ad alcune domande relative alla gestione della tua azienda</p>
+<p></p>
+<p> Inoltre, usando una scala da 1 (per nulla) a 7 (moltissimo), ti chiederemo di esprimere quanto
+    sei d’accordo con alcune affermazioni relative ad alcuni aspetti legati all’adozione dei contratti
+    di produzione (benefici, barriere, fiducia)</p>
+<p></p>
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-right: 10%">
+        		<div class="col-md-10">
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Clicca qui per procedere con il questionario</span>
+             </button>
+        	</div>
+        </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

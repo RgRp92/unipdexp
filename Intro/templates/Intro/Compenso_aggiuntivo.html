@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Compenso monetario aggiuntivo
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+
+<div class="w3-container border-top " style="font-size: 22px">
+<p></p>
+    Inoltre, avrai la possibilità di vincere <b>un ulteriore compenso, che può essere al massimo di 53.99€</b>
+    <p></p>
+    <b>Come?</b>
+</div>
+<p></p>
+
+    {% next_button %}
+{% endblock %}
+
+

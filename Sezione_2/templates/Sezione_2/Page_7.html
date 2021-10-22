@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Il compenso monetario aggiuntivo
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+<div class="w3-container border-top" style="font-size: 22px">    <p></p>
+    Il compenso monetario che potrai ricevere da questa sezione viene calcolato in base:
+    <p></p>
+    <ul>
+        <li> a come avrai distribuito i 100 gettoni</li>
+        <p></p>
+        <li>al prezzo che si verificherà nel Luglio 2022</li>
+    </ul>
+</div>
+    {% next_button %}
+{% endblock %}
+
+

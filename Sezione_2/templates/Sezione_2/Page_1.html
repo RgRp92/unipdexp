@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3>Obiettivo</h3>
+{% endblock %}
+
+{% block content %}
+<div class="w3-container border-top" style="font-size: 22px">
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+
+<p></p>
+    In questa sezione, ti chiederemo di indicare quale sarà, secondo te, il prezzo (€/q) del frumento duro alla
+    raccolta, nel Luglio 2022
+    <p></p>
+    Come?
+    <p></p>
+</div>
+    {% next_button %}
+{% endblock %}
+
+

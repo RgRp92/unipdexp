@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Esempio 2
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+<div class="w3-container border-top " style="font-size: 22px">
+<p></p>
+Se il prezzo predetto dal nostro modello statistico è pari a €27.34, riceverai €28
+<p></p>
+    <img src="{%static '/Sezione_3/contratti4a.jpg' %}"  align="middle" width="100%"/>
+
+</div>
+    {% next_button %}
+
+{% endblock %}

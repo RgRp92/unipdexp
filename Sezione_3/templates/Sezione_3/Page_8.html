@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3>Assumiamo che ci sono 100 agricoltori</h3>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+<div class="w3-container border-top" style="font-size: 22px">
+    <p> 10 verrano estratti</p>
+ <img src="{%static '/Sezione_2/RandSel.jpg' %}"  align="middle" width="80%"/>
+
+    {% next_button %}
+{% endblock %}
+
+

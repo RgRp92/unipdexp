@@ -1,0 +1,29 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+<h3> Il tuo compenso aggiuntivo dipenda da:</h3>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+
+<div class="w3-container border-top" style="font-size: 22px">
+<p></p>
+    <p></p>
+    <ol>
+        <li> Il fatto che tu sia estratto a sorte per ricevere il pagamento</li>
+        <p></p>
+        <li>Il fatto che la sezione 3 sia estratta a sorte al termine dello studio</li>
+        <p></p>
+        <li> La situazione di scelta estratta a sorte tra le 33 sostenute nella Sezione 3</li>
+        <p></p>
+        <li>La riga da te indicata</li>
+        <p></p>
+        <li>Il prezzo del frumento alla raccolta, nel Luglio 2022, predetto dal nostro modello statistico</li>
+    </ol>
+</div>
+    {% next_button %}
+{% endblock %}
+
+

@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% block title %}
+<h3>Supponiamo che tu scelga la riga 6</h3>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+<div class="w3-container border-top " style="font-size: 22px">
+Ciò vuol dire che è questa la versione dell'Opzione B per cui rinunci all'Opzione A.
+<p></p>
+    <img src="{%static '/Sezione_3/contratti2.jpg' %}"  align="middle" width="100%"/>
+</div>
+    {% next_button %}
+
+{% endblock %}

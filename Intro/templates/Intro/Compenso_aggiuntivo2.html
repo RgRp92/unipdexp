@@ -1,0 +1,38 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Compenso monetario aggiuntivo
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+
+<div class="w3-container border-top " style="font-size: 22px">
+<p></p>
+    Al termine della ricerca, verrà estratto casualmente:
+    <p></p>
+    <ul>
+        <li> Il 10% degli agricoltori partecipanti alla ricerca</li>
+        <p></p>
+    </ul>
+<p></p>
+    Al termine dello studio di oggi, verrà estratta casualmente:
+    <p></p>
+    <ul>
+        <li>1 sola sezione (tra la n. 2, 3, 5 e 6)</li>
+        <p></p>
+    </ul>
+    Gli agricoltori estratti otteranno un compenso aggiuntivo che dipende dalle scelte nella sezione estratta
+    <p></p>
+    Gli agricoltori non estratti riceveranno solo il compenso base di 20€
+    <p></p>
+    Il compenso totale verrà versato sul tuo conto bancario mediante il codice IBAN che ti sarà richiesto alla fine
+    dello studio (da verificare)
+</div>
+<p></p>
+
+    {% next_button %}
+{% endblock %}
+
+

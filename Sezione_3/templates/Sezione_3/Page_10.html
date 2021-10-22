@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+   Estrarremo una situazione di scelta - Esempio 1
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty4.css" %}">
+<div class="w3-container  " style="font-size: 22px">
+    <center>
+    <img src="{%static '/Sezione_3/bag2.jpg' %}"  align="middle" sizes="50%"/>
+</center>
+<img src="{%static '/Sezione_3/contratti3.jpg' %}"  align="middle" width="100%"/>
+
+</div>
+    <p></p>
+    {% next_button %}
+
+{% endblock %}

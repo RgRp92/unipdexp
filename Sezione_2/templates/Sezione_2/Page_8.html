@@ -1,0 +1,28 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty2.css" %}">
+<div class="w3-container border-top" style="font-size: 22px">
+    <p></p>
+    Adesso è impossibile conoscere questo prezzo, per cui utilizzeremo una previsione ottenuta mediante
+    l'utilizzo di metodi statistici.
+    <p></p>
+    Questa previsione si basa sui seguenti dati:
+    <p></p>
+    <ul>
+        <li> il prezzo CBOT contrattato al 1 Ottobre per il frumento alla raccolta, nel Luglio 2022 </li>
+        <p></p>
+        <li>i prezzi storici del frumento nel mese di Luglio nel periodo dal 2012 al 2020</li>
+        <p></p>
+        <li>i prezzi storici del frumento duro in Italia nel mese di Luglio nel periodo
+            dal 2012 al 2020 </li>
+    </ul>
+</div>
+    {% next_button %}
+{% endblock %}
+
+

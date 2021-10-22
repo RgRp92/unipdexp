@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Esempio 1
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+
+<div class="w3-container border-top " style="font-size: 22px">
+<p></p>
+Se la riga da te indicata (n. 20) è uguale alla situazione di scelta estratta (n. 20),
+    riceverai il prezzo fisso indicato dall'Opzione B nella riga estratta (n.20), ovvero 39.70€
+<p></p>
+<img src="{%static '/Sezione_3/contratti4c.jpg' %}"  align="middle" width="100%"/>
+</div>
+<p></p>
+    {% next_button %}
+
+{% endblock %}

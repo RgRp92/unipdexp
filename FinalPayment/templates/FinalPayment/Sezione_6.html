@@ -1,0 +1,118 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty3.css" %}">
+
+
+<h1> La situazione di scelta estratta per il pagamento è la: #{{rrow}}. </h1>
+
+<div class="w3-container border-top ">
+	<p></p>
+		<h5></h5>
+<p></p>
+</div>
+
+<table class="table table-hover table-bordered" style="width : 100%" align="middle">
+    <tr align="middle">
+        <td></td>
+        <td colspan="8"align="middle" style="font-weight: bold">OPZIONE A</td>
+                <td></td>
+        <td  style="font-weight: bold">OPZIONE B</td>
+    </tr>
+    <tr align="middle" style="font-weight: bold">
+        <td></td>
+        <td colspan="8" width="13%">Contratto SENZA prezzo fisso</td>
+        <td width="5%"></td>
+        <td >Contratto CON prezzo fisso</td>
+    </tr>
+    <tr align="middle">
+        <td width="">{{rrow}}</td>
+        <td width="10%">22.00 - 25.99</td>
+        <td width="10%">26.00 - 29.99</td>
+        <td width="10%">30.00 - 33.99</td>
+        <td width="10%">34.00 - 37.99</td>
+        <td width="10%">38.00 - 41.99</td>
+        <td width="10%">42.00 - 45.99</td>
+        <td width="10%">46.00 - 49.99</td>
+        <td width="10%">50.00 - 53.99</td>
+        <td></td>
+        <td>{% if rvalue == 1 %} {{ra1_value}}
+            {% endif %}
+            {% if rvalue == 2 %} {{ra2_value}}
+            {% endif %}
+            {% if rvalue == 3 %} {{ra3_value}}
+            {% endif %}
+            {% if rvalue == 4 %} {{ra4_value}}
+            {% endif %}</td>
+
+    </tr>
+</table>
+<p></p>
+<!-- The lottery chosen -->
+	<div class="w3-container border-top ">
+        <p></p>
+        <p>• La riga da te indicata è la: #
+         {% if rvalue == 1 %} <b>{{rchoice1}}</b> {% endif %}
+         {% if rvalue == 2 %}<b>{{rchoice2}}</b>{% endif %}
+         {% if rvalue == 3 %} <b>{{rchoice3}}</b> {% endif %}
+         {% if rvalue == 4 %} <b>{{rchoice4}}</b> {% endif %}</p>
+		<p></p>
+		<p>• Nella situazione estratta hai scelto:
+		{% if rvalue == 1 %}
+            {% if rrow <= rchoice1 %}
+    <b>Opzione A.</b>
+		{% else %}
+    <b>Opzione B.</b>
+		{% endif %}
+		    {% endif %}
+         {% if rvalue == 2 %}
+            {% if  rrow <= rchoice2 %}
+    <b>Opzione A.</b>
+		{% else %}
+    <b>Opzione B.</b>
+		{% endif %}
+		{% endif %}
+            		{% if rvalue == 3 %}
+            {% if  rrow <= rchoice3 %}
+    <b>Opzione A.</b>
+		{% else %}
+    <b>Opzione B.</b>
+		{% endif %}
+		{% endif %}
+            		{% if rvalue == 4 %}
+            {% if  rrow <= rchoice4 %}
+    <b>Opzione A.</b>
+		{% else %}
+    <b>Opzione B.</b>
+		{% endif %}
+		{% endif %}
+
+</p>
+<p>• In base al nostro modello statistico, il prezzo per il frumento duro alla raccolta, nel luglio 2022, è: 34.60 €/q
+</p>
+
+		<p>• Il pagamento addizionale è pari <b>{{payoff_HLr|safe}}€</b>
+</div>
+
+
+<div class="container">
+        	<div class="row">
+        		&nbsp;
+        	</div>
+        	<div class="row" style="padding-left:95%;">
+        		<div class="col-md-10">
+
+        		</div>
+        		<div class="col-md-2">
+              <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Clicchi qui per procedere</span>
+             </button>
+        		</div>
+
+        	</div>
+        </div>
+
+
+{% endblock %}
