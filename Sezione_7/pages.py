@@ -54,7 +54,7 @@ class Page_12(Page):
     form_fields = ['likert19','likert20','likert21','likert22','likert23','likert24']
 
 
-page_sequence = [Page_0,
+page_sequence = [#Page_0,
                  Page_1,
                  Page_2,
                  Page_3,
