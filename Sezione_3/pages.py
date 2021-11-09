@@ -20,6 +20,8 @@ class Page_6(Page):
     pass
 class Page_6a(Page):
     pass
+class Page_6b(Page):
+    pass
 class Page_7(Page):
     pass
 class Page_8(Page):
@@ -39,9 +41,6 @@ class Page_14(Page):
 class Page_15(Page):
     pass
 class Page_16(Page):
-    pass
-
-class Page_17(Page):
     form_model = 'player'
     form_fields = ['HL_1']
 
@@ -52,8 +51,7 @@ class Page_17(Page):
             'HL_1': fix[0],
         }
 
-
-class Page_18(Page):
+class Page_17(Page):
     form_model = 'player'
     form_fields = ['HL_2']
 
@@ -184,8 +182,7 @@ class Page_18(Page):
                 'HL13': fix + 4,
             }
 
-
-class Page_19(Page):
+class Page_18(Page):
     form_model = 'player'
     form_fields = ['HL_3']
 
@@ -291,7 +288,7 @@ class Page_19(Page):
                     'HL22': round(fix + 0.9, 2),
                     'HL23': round(fix + 1, 2)}
 
-class Page_20(Page):
+class Page_19(Page):
     form_model = 'player'
     form_fields = ['HL_4']
 
@@ -564,7 +561,7 @@ class Page_20(Page):
         self.player.set_row()
         self.player.set_payoff_HL()
 
-class Page_21(Page):
+class Page_20(Page):
 
     def vars_for_template(self):
        a1_value = self.participant.vars['final_fix'][self.session.vars['HL_row']-1]
@@ -607,6 +604,7 @@ page_sequence = [Page_0,
                  Page_5,
                  Page_6,
                  Page_6a,
+                 Page_6b,
                  Page_7,
                  Page_8,
                  Page_9,
@@ -621,5 +619,4 @@ page_sequence = [Page_0,
                  Page_18,
                  Page_19,
                  Page_20,
-                 Page_21,
                  ]

@@ -34,7 +34,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     year = models.IntegerField(label='1. Anno di nascita', min=1900, max=2013)
 
-    year_azienda = models.IntegerField(label='2. Anno di insediamento aziendale', min=1900, max=2013)
+    year_azienda = models.IntegerField(label='2. Anno di insediamento aziendale', min=1900)
 
     gender = models.StringField(
         choices=[['1', 'M'], ['2', 'F']],
@@ -59,7 +59,7 @@ class Player(BasePlayer):
     )
     status = models.StringField(
         choices=[['1', 'Azienda individuale'], ['2', 'Società di persone'],
-                 ['3', 'Società di capitali'],['4', 'Altro (specificare)']],
+                 ['3', 'Società di capitali'],['4', 'Altro']],
         label='8. Forma giuridica della tua azienda',
         widget=widgets.RadioSelect,
     )
@@ -97,7 +97,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect)
 
     q14 = models.StringField(
-        choices=[['1', 'Sarà venduta a terzi'], ['2', 'Sarà gestita da un altro membro della famiglia (succesione)']],
+        choices=[['1', 'Sarà venduta a terzi'], ['2', 'Sarà gestita da un altro membro della famiglia (successione)']],
         label='14. SE SI, prevedi che la tua azienda',
         widget=widgets.RadioSelect)
 
@@ -144,7 +144,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect)
     q25 = models.StringField(
         choices=[['1', 'SI'], ['2', 'NO']],
-        label='25. Hai mai ADOTTATO LA ASSICURAZIONE AGRICOLA in passato?',
+        label='25. Hai mai ADOTTATO L\' ASSICURAZIONE AGRICOLA in passato?',
         widget=widgets.RadioSelect)
     q26 = models.StringField(
         choices=[['1', 'SI'], ['2', 'NO']],
@@ -165,7 +165,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect)
     q30 = models.StringField(
         choices=[['1', 'SI'], ['2', 'NO']],
-        label='30. Intendi farlo in futuro? ',
+        label='30. Intendi farlo in futuro?',
         widget=widgets.RadioSelect)
     q31 = models.StringField(
         choices=[['1', 'SI'], ['2', 'NO']],
