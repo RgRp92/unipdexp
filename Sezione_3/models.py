@@ -104,7 +104,7 @@ class Player(BasePlayer):
         choices = [self.HL_1,self.HL_2,self.HL_3,self.HL_4]
 
         self.participant.vars['choices'] = choices
-        # *******************************************
+       # *******************************************
         # Compute here the payoffs
         # *******************************************
         if self.session.vars['HL_random'] == 1:
@@ -134,3 +134,4 @@ class Player(BasePlayer):
 
         self.payoff = self.participant.vars['payoff_HL']
         # write the payoff to player.payoff
+

@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Esempio 1
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "global/empty4.css" %}">
+<div class="w3-container  " style="font-size: 22px">
+    Questo perchè avendo indicato la riga 6, le tue scelte sono le seguenti come in figura.
+
+<img src="{%static '/Sezione_3/contratti6.jpg' %}"  align="middle" width="100%"/>
+</div>
+    <p></p>
+
+{% endblock %}

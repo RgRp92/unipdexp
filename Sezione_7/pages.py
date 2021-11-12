@@ -9,9 +9,6 @@ class Page_0(Page):
 class Page_1(Page):
     pass
 
-class Page_2(Page):
-    pass
-
 class Page_3(Page):
     form_model = 'player'
     form_fields = ['year','year_azienda','gender','istruzione','area','areagrain']
@@ -56,7 +53,6 @@ class Page_12(Page):
 
 page_sequence = [#Page_0,
                  Page_1,
-                 Page_2,
                  Page_3,
                  Page_4,
                  Page_5,

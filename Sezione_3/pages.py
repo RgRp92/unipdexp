@@ -30,6 +30,8 @@ class Page_9(Page):
     pass
 class Page_10(Page):
     pass
+class Page_10b(Page):
+    pass
 class Page_11(Page):
     pass
 class Page_12(Page):
@@ -609,10 +611,10 @@ page_sequence = [Page_0,
                  Page_8,
                  Page_9,
                  Page_10,
+                 Page_10b,
                  Page_11,
                  Page_12,
                  Page_13,
-                 Page_14,
                  Page_15,
                  Page_16,
                  Page_17,

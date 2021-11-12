@@ -1,3 +1,34 @@
+Skip to content
+Why GitHub? 
+Team
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+Sign in
+Sign up
+RgRp92
+/
+unipdexp
+Public
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+unipdexp/Sezione_6/templates/Sezione_6/Page_5.html
+@RgRp92
+RgRp92 almost done 2
+Latest commit f592ab7 21 days ago
+ History
+ 1 contributor
+150 lines (137 sloc)  5.18 KB
+   
 {% extends "global/Page.html" %}
 {% load otree static %}
 {% block styles %}
@@ -40,12 +71,10 @@ input[type=radio]:focus {
 <table class="table table-hover " style="width : 100%; " text-align="middle">
     <tr style="font-weight: bold; ">
         <td></td>
-        <td></td>
         <td colspan="8" align="middle" style="border-right: 1px solid" >OPZIONE A</td>
         <td  style="border-right: 1px solid" >OPZIONE B</td>
     </tr>
     <tr style="font-weight: bold">
-        <td></td>
         <td></td>
         <td colspan="8" style="border-right: 1px solid" >Contratto SENZA prezzo fisso</td>
         <td width="15%" style="border-right: 1px solid" >Contratto CON prezzo fisso</td>
@@ -53,8 +82,7 @@ input[type=radio]:focus {
     </tr>
     <tr>
         <td width="">10</td>
-        <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="10" name="rHL_2" required></td>
-        <td width="10%">22.00 - 25.99</td>
+        <td width="10%" style="border-left: 1px solid">22.00 - 25.99</td>
         <td width="10%">26.00 - 29.99</td>
         <td width="10%">30.00 - 33.99</td>
         <td width="10%">34.00 - 37.99</td>
@@ -63,6 +91,7 @@ input[type=radio]:focus {
         <td width="10%">46.00 - 49.99</td>
         <td width="10%" style="border-right: 1px solid">50.00 - 53.99</td>
         <td rowspan="1" style="border-right: 1px solid">{{rHL10}}</td>
+    <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="10" name="rHL_2" required></td>
     </tr>
 </table>
 <table class="table table-hover " style="width : 100%; " text-align="middle">
@@ -74,8 +103,7 @@ input[type=radio]:focus {
     </tr>
     <tr>
         <td>11</td>
-        <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="11" name="rHL_2" required></td>
-        <td width="10%">22.00 - 25.99</td>
+        <td width="10%" style="border-left: 1px solid">22.00 - 25.99</td>
         <td width="10%">26.00 - 29.99</td>
         <td width="10%">30.00 - 33.99</td>
         <td width="10%">34.00 - 37.99</td>
@@ -84,6 +112,7 @@ input[type=radio]:focus {
         <td width="10%">46.00 - 49.99</td>
         <td width="10%" style="border-right: 1px solid">50.00 - 53.99</td>
         <td width="15%" style="border-right: 1px solid">{{rHL11}}</td>
+    <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="11" name="rHL_2" required></td>
     </tr>
 </table>
 <table class="table table-hover " style="width : 100%; " text-align="middle">
@@ -95,8 +124,7 @@ input[type=radio]:focus {
     </tr>
     <tr>
         <td>12</td>
-        <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="12" name="rHL_2" required></td>
-        <td width="10%">22.00 - 25.99</td>
+        <td width="10%" style="border-left: 1px solid">22.00 - 25.99</td>
         <td width="10%">26.00 - 29.99</td>
         <td width="10%">30.00 - 33.99</td>
         <td width="10%">34.00 - 37.99</td>
@@ -105,6 +133,7 @@ input[type=radio]:focus {
         <td width="10%">46.00 - 49.99</td>
         <td width="10%" style="border-right: 1px solid">50.00 - 53.99</td>
         <td width="15%" style="border-right: 1px solid">{{rHL12}}</td>
+    <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="12" name="rHL_2" required></td>
     </tr>
 </table>
 <table class="table table-hover " style="width : 100%; " text-align="middle">
@@ -116,8 +145,7 @@ input[type=radio]:focus {
     </tr>
     <tr>
         <td>13</td>
-        <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="13" name="rHL_2" required></td>
-        <td width="10%">22.00 - 25.99</td>
+        <td width="10%" style="border-left: 1px solid">22.00 - 25.99</td>
         <td width="10%">26.00 - 29.99</td>
         <td width="10%">30.00 - 33.99</td>
         <td width="10%">34.00 - 37.99</td>
@@ -126,6 +154,7 @@ input[type=radio]:focus {
         <td width="10%">46.00 - 49.99</td>
         <td width="10%" style="border-right: 1px solid">50.00 - 53.99</td>
         <td width="15%" style="border-right: 1px solid">{{rHL13}}</td>
+    <td width=5%" rowspan="1"style="border-right: 1px solid" ><input class="radio" type="radio" value="13" name="rHL_2" required></td>
     </tr>
 </table>
 
@@ -148,3 +177,16 @@ input[type=radio]:focus {
         	</div>
         </div>
 {% endblock %}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete

@@ -135,4 +135,4 @@ class Player(BasePlayer):
 
 
         self.payoff = self.participant.vars['payoff_HLr']
-        # write the payoff to player.payoff
+
